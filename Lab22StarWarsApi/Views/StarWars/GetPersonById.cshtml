@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "GetPersonById";
+}
+
+
+@model PersonData
+
+<table class="table">
+        <tr>
+            <th>Name</th>
+            <th>Height</th>
+            <th>Weight</th>
+            <th>Birth Year</th>
+            <th>Species</th>
+            <th>Homeworld</th>
+        </tr>
+
+        <tr>
+            <td>@Model.name</td>
+            <td>@Model.height</td>
+            <td>@Model.mass</td>
+            <td>@Model.birth_year</td>
+            <td>@Model.species.ToString()</td>
+            <td>@Model.homeworld</td>
+        </tr>
+        
+
+</table>

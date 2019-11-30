@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "ShowPeople";
+}
+
+@model List<PersonRoot>
+<h1>Star Wars Characters</h1>
+
+
+<form action="../StarWars/GetPersonById" method="post">
+    <select>
+        @foreach (PersonRoot person in Model)
+        {
+            @for (int i = 0; i < person.count; i++)
+            {
+                <option name="Id" value="@person.results[i]">@person.results[i].name</option>
+            }
+        }
+
+    </select>
+
+
+    <input type="submit" value="Find Person" />
+</form>
+

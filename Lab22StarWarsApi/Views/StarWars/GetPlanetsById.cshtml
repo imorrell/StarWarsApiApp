@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "GetPlanetsById";
+}
+
+<h1>Star Wars Planets</h1>
+
+@model PlanetData
+
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Population</th>
+        <th>Climate</th>
+        <th>Gravity</th>
+        <th>Terrain</th>
+    </tr>
+
+    <tr>
+        <td>@Model.name</td>
+        <td>@Model.population</td>
+        <td>@Model.climate</td>
+        <td>@Model.gravity</td>
+        <td>@Model.terrain</td>
+    </tr>
+
+
+</table>
+
